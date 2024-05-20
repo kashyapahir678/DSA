@@ -17,14 +17,10 @@ int delete(int index, int arr[100],int n){
      for(int k=0; k<n; k++){    
         printf("%d \t",arr[k]);
       }
-    }
-    else{
-        printf("no element found!");
-    }
-
-    printf("\n");
-
-    //deleting array
+      
+      printf("\n");
+      
+      //deleting array
 
         for(int i=index-1; i<=n; i++){
           arr[i] = arr[i+1];
@@ -33,6 +29,13 @@ int delete(int index, int arr[100],int n){
         for(int i=0; i<n-1; i++){
            printf("%d \t",arr[i]);
         }
+        
+    }
+    else{
+        printf("no element found!");
+    }
+
+    printf("\n");
 
     return 0;
 }

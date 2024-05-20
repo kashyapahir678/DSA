@@ -4,6 +4,8 @@
 int rare= -1;
 int front = -1;
 
+//first in first out 
+
 int queueInsert(int arr[],int n,int element){
     
     if(rare==n-1){
@@ -18,7 +20,7 @@ int queueInsert(int arr[],int n,int element){
         arr[rare]=element;
     }
     
-}
+} 
 
 int queueDelete(int arr[]){
      if(rare==-1 && front == -1){
